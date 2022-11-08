@@ -1,3 +1,5 @@
+#!/bin/bash
+
 curl -OL https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v2.3.3/oidc_login.tar.gz
 curl -OL https://github.com/CollaboraOnline/richdocumentscode/releases/download/22.5.702/richdocumentscode.tar.gz
 curl -OL https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/8f7a2d20d9965e6292e71cafa0f31d26/phonetrack-0.7.2.tar.gz
@@ -29,3 +31,7 @@ curl -OL https://github.com/kffl/nextcloud-webhooks/releases/download/v0.4.0/web
 curl -OL https://ftp.unix-experience.fr/owncloud-sms/v1.10.1.tar.gz
 git clone https://github.com/HomeITAdmin/nextcloud_geoblocker.git
 git clone https://github.com/nextcloud/unsplash.git
+
+
+tar -xvf *.gz 
+mv * /var/lib/containers/storage/volumes/nextcloud/_data/apps
